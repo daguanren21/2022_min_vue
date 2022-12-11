@@ -14,9 +14,6 @@ export function isReadonly(value: unknown): boolean {
 }
 //存储已经通过proxy代理过的对象
 export const reactiveMap = new WeakMap<Target, any>();
-export const shallowReactiveMap = new WeakMap<Target, any>();
-export const readonlyMap = new WeakMap<Target, any>();
-export const shallowReadonlyMap = new WeakMap<Target, any>();
 export function reactive<T extends object>(target: T);
 
 export function reactive(target: object) {
